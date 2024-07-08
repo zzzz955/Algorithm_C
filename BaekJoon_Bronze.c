@@ -1,13 +1,22 @@
 void q4562();
 void q4892();
 void q5217();
+void q5337();
 
 #include <stdio.h>
 
 int main(void) {
-    q5217();
+    q5337();
     return 0;
 }
+
+void q5337() {
+    // 백준 5337번 웰컴 C언어
+    printf(".  .   .\n");
+    printf("|  | _ | _. _ ._ _  _\n");
+    printf("|/\\|(/.|(_.(_)[ | )(/.\n");
+}
+
 
 void q5217() {
     // 백준 5217번 쌍의 합 C언어
