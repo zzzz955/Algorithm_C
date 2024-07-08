@@ -7,13 +7,36 @@ void q5339();
 void q5522();
 void q6749();
 void q6778();
+void q22966();
 
 #include <stdio.h>
 
 int main(void) {
-    q6778();
+    q22966();
     return 0;
 }
+
+void q22966() {
+    // 백준 22966번 가장 쉬운 문제를 찾는 문제 C언어
+    int n;
+    scanf("%d", &n);
+    typedef struct {
+        char s[11];
+        int d;
+    } q;
+    q qs[4];
+    for (int i = 0; i < n; i++) {
+        scanf("%11s %d", &qs[i].s, &qs[i].d);
+    }
+    q easy = qs[0];
+    for (int i = 1; i < n; i++) {
+        if (qs[i].d < easy.d) {
+            easy = qs[i];
+        }
+    }
+    printf("%s", easy.s);
+}
+
 
 void q6778() {
     // 백준 6778번 Which Alien? C언어
