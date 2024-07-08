@@ -4,19 +4,32 @@ void q5217();
 void q5337();
 void q5338();
 void q5339();
+void q5522();
 
 #include <stdio.h>
 
 int main(void) {
-    q5339();
+    q5522();
     return 0;
 }
+
+void q5522() {
+    // 백준 5522번 카드 게임 C언어
+    int ans = 0;
+    for (int i = 0; i < 5; i++) {
+        int a;
+        scanf("%d", &a);
+        ans += a;
+    }
+    printf("%d", ans);
+}
+
 
 void q5339() {
     // 백준 5339번 콜센터 C언어
     printf("     /~\\\n");
     printf("    ( oo|\n");
-    printf("    _\\=/_\\n");
+    printf("    _\\=/_\n");
     printf("   /  _  \\\n");
     printf("  //|/.\\|\\\\\n");
     printf(" ||  \\ /  ||\n");
