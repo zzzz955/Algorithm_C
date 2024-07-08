@@ -5,13 +5,23 @@ void q5337();
 void q5338();
 void q5339();
 void q5522();
+void q6749();
 
 #include <stdio.h>
 
 int main(void) {
-    q5522();
+    q6749();
     return 0;
 }
+
+void q6749() {
+    // 백준 6749번 Next in line
+    int a, b;
+    scanf("%d", &a);
+    scanf("%d", &b);
+    printf("%d", b * 2 - a);
+}
+
 
 void q5522() {
     // 백준 5522번 카드 게임 C언어
