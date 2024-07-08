@@ -2,13 +2,24 @@ void q4562();
 void q4892();
 void q5217();
 void q5337();
+void q5338();
 
 #include <stdio.h>
 
 int main(void) {
-    q5337();
+    q5338();
     return 0;
 }
+
+void q5338() {
+    // 백준 5338번 마이크로소프트 로고 C언어
+    printf("       _.-;;-._\n");
+    printf("'-..-'|   ||   |\n");
+    printf("'-..-'|_.-;;-._|\n");
+    printf("'-..-'|   ||   |\n");
+    printf("'-..-'|_.-''-._|\n");
+}
+
 
 void q5337() {
     // 백준 5337번 웰컴 C언어
