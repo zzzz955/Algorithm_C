@@ -6,16 +6,28 @@ void q5338();
 void q5339();
 void q5522();
 void q6749();
+void q6778();
 
 #include <stdio.h>
 
 int main(void) {
-    q6749();
+    q6778();
     return 0;
 }
 
+void q6778() {
+    // 백준 6778번 Which Alien? C언어
+    int antenna, eyes;
+    scanf("%d", &antenna);
+    scanf("%d", &eyes);
+    if (antenna >= 3 && eyes <= 4) printf("TroyMartian\n");
+    if (antenna <= 6 && eyes >= 2) printf("VladSaturnian\n");
+    if (antenna <= 2 && eyes <= 3) printf("GraemeMercurian\n");
+}
+
+
 void q6749() {
-    // 백준 6749번 Next in line
+    // 백준 6749번 Next in line C언어
     int a, b;
     scanf("%d", &a);
     scanf("%d", &b);
