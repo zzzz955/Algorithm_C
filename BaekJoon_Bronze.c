@@ -3,13 +3,29 @@ void q4892();
 void q5217();
 void q5337();
 void q5338();
+void q5339();
 
 #include <stdio.h>
 
 int main(void) {
-    q5338();
+    q5339();
     return 0;
 }
+
+void q5339() {
+    // 백준 5339번 콜센터 C언어
+    printf("     /~\\\n");
+    printf("    ( oo|\n");
+    printf("    _\\=/_\\n");
+    printf("   /  _  \\\n");
+    printf("  //|/.\\|\\\\\n");
+    printf(" ||  \\ /  ||\n");
+    printf("============\n");
+    printf("|          |\n");
+    printf("|          |\n");
+    printf("|          |\n");
+}
+
 
 void q5338() {
     // 백준 5338번 마이크로소프트 로고 C언어
