@@ -1,12 +1,36 @@
 void q4562();
 void q4892();
+void q5217();
 
 #include <stdio.h>
 
-int main() {
-    q4892();
+int main(void) {
+    q5217();
     return 0;
 }
+
+void q5217() {
+    // 백준 5217번 쌍의 합 C언어
+    int n;
+    scanf("%d", &n);
+    while (n--) {
+        int num;
+        scanf("%d", &num);
+        printf("Pairs for %d:", num);
+        if (num > 2) {
+            printf(" %d %d", 1, num - 1);
+            for (int i = 2; i < 100; i++) {
+                if (i < num - i) {
+                    printf(", %d %d", i, num - i);
+                } else {
+                    break;
+                }
+            }
+        }
+        printf("\n");
+    }
+}
+
 
 void q4892() {
     // 백준 4892번 숫자 맞추기 게임 C언어
